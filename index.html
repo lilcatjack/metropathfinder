@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسیر یابی مترو</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">مسیر یابی مترو</h1>
+        <div class="inputs">
+            <sl-select label="Start Station" id="start" onchange="displayLine('start')">
+                <small>Line 1</small>
+                <sl-option value="A" data-line="1">Station A</sl-option>
+                <sl-option value="B" data-line="1">Station B</sl-option>
+                <sl-option value="C" data-line="1">Station C</sl-option>
+                <sl-option value="D" data-line="1">Station D</sl-option>
+                <sl-divider></sl-divider>
+                <small>Line 2</small>
+                <sl-option value="E" data-line="2">Station E</sl-option>
+                <sl-option value="F" data-line="2">Station F</sl-option>
+                <sl-option value="G" data-line="2">Station G</sl-option>
+                <sl-option value="H" data-line="2">Station H</sl-option>
+                <sl-divider></sl-divider>
+                <small>Line 3</small>
+                <sl-option value="I" data-line="3">Station I</sl-option>
+                <sl-option value="J" data-line="3">Station J</sl-option>
+                <sl-option value="K" data-line="3">Station K</sl-option>
+                <sl-option value="L" data-line="3">Station L</sl-option>
+              </sl-select>
+              <span id="start-line"></span>
+              
+              
+              <sl-select label="End Station" id="end" onchange="displayLine('end')">
+                <small>Line 1</small>
+                <sl-option value="A" data-line="1">Station A</sl-option>
+                <sl-option value="B" data-line="1">Station B</sl-option>
+                <sl-option value="C" data-line="1">Station C</sl-option>
+                <sl-option value="D" data-line="1">Station D</sl-option>
+                <sl-divider></sl-divider>
+                <small>Line 2</small>
+                <sl-option value="E" data-line="2">Station E</sl-option>
+                <sl-option value="F" data-line="2">Station F</sl-option>
+                <sl-option value="G" data-line="2">Station G</sl-option>
+                <sl-option value="H" data-line="2">Station H</sl-option>
+                <sl-divider></sl-divider>
+                <small>Line 3</small>
+                <sl-option value="I" data-line="3">Station I</sl-option>
+                <sl-option value="J" data-line="3">Station J</sl-option>
+                <sl-option value="K" data-line="3">Station K</sl-option>
+                <sl-option value="L" data-line="3">Station L</sl-option>
+              </sl-select>
+              <span id="end-line"></span>              
+
+
+            <button id="findRoute">یافتن مسیر</button>
+        </div>
+
+        <h2>نتیجه مسیر:</h2>
+        <div id="result"></div>
+
+        <i>Metro Path Finder wrote by D Corp(delvin)</i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"></script>
+
+</html>
