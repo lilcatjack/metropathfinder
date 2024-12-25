@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metro Route Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>پیدا کردن مسیر مترو</h1>
+    
+    <div>
+      <label for="start">ایستگاه مبدا:</label>
+      <select id="start" onchange="displayLine('start')">
+        <!-- گزینه‌ها از جاوااسکریپت بارگذاری می‌شوند -->
+      </select>
+      <span id="start-line"></span>
+    </div>
+
+    <div>
+      <label for="end">ایستگاه مقصد:</label>
+      <select id="end" onchange="displayLine('end')">
+        <!-- گزینه‌ها از جاوااسکریپت بارگذاری می‌شوند -->
+      </select>
+      <span id="end-line"></span>
+    </div>
+
+    <button id="findRoute">یافتن مسیر</button>
+    
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
